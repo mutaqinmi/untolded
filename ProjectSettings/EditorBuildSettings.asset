@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 30b6efd1e41d1c04db94c65b36d7bee6
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/SceneLoading/LoadingScreen.unity
+    guid: 888394d52616e5e42b3b54c3f2bbd3eb
+  - enabled: 1
+    path: Assets/Scenes/CutScene 1.unity
+    guid: f7f40478a24683948b91ce5574fafca4
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1 Opening.unity
+    guid: d4fb003fb06e91f45be343e0cd3d4226
+  - enabled: 1
+    path: Assets/Scenes/Scene 1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Scene 2.unity
+    guid: 0a075fa1a7e6a1c458df1e586f7d72de
+  - enabled: 1
+    path: Assets/Scenes/Scene 3.unity
+    guid: 4a03c752258909345b160c07775d42c0
+  - enabled: 1
+    path: Assets/Scenes/Scene 4.unity
+    guid: c7c1d631049b68a46a9375fd70fda4ec
+  m_configObjects: {}
