@@ -123,60 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &191172126
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 191172127}
-  - component: {fileID: 191172128}
-  m_Layer: 0
-  m_Name: Dialogue 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &191172127
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191172126}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -50.537476, y: -290.3305, z: -3.0590458}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2052196739}
-  m_Father: {fileID: 813473964}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &191172128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191172126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f52744686f3d854cb49f15b4079c518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textComponent: {fileID: 2052196740}
-  dialogue:
-  - Lihatlah!
-  - Orang-orang terlihat begitu bahagia, menikmati kemeriahan di setiap sudut.
-  - Aku... tidak pernah membayangkan ada di tempat seperti ini, merasa sebahagia
-    ini.
-  - Tapi anehnya, aku tidak ingat. Kenapa aku ada di sini?
-  - Di tempat yang dulu hanya ada dalam mimpiku.
-  typeSpeed: 0.025
 --- !u!1 &315203377
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,13 +134,14 @@ GameObject:
   - component: {fileID: 315203378}
   - component: {fileID: 315203380}
   - component: {fileID: 315203379}
+  - component: {fileID: 315203381}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Dialogue 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &315203378
 RectTransform:
   m_ObjectHideFlags: 0
@@ -203,16 +150,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315203377}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3.0590458}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2057145227}
+  m_Father: {fileID: 813473964}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50.537468, y: -80.669495}
-  m_SizeDelta: {x: 1774.667, y: 214.4929}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0.000019073486, y: 180}
+  m_SizeDelta: {x: 1280, y: 214.49292}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &315203379
 MonoBehaviour:
@@ -262,8 +209,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -312,6 +259,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315203377}
   m_CullTransparentMesh: 1
+--- !u!114 &315203381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315203377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f52744686f3d854cb49f15b4079c518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 315203379}
+  dialogue:
+  - Setiap langkah di sini... terasa bermakna.
+  - Aku belajar, tumbuh, bertemu orang-orang yang mengubah hidupku.
+  - Tapi rasanya... selalu ada yang kurang.
+  - "Andai kamu ada di sini\u2026"
+  typeSpeed: 0.025
 --- !u!1 &651791539
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,8 +308,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox:
-  - {fileID: 191172126}
-  - {fileID: 2057145226}
+  - {fileID: 2052196738}
+  - {fileID: 315203377}
   scene: Chapter 1 Opening
 --- !u!4 &651791541
 Transform:
@@ -476,12 +442,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -523,8 +489,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 651791541}
-  - {fileID: 191172127}
-  - {fileID: 2057145227}
+  - {fileID: 2052196739}
+  - {fileID: 315203378}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -669,6 +635,74 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!1001 &1873941200
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6457326480394908830, guid: 3190f63ceac5ca74ab38480aebdc37a5,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942691533729196633, guid: 3190f63ceac5ca74ab38480aebdc37a5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4194405
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942691533729196633, guid: 3190f63ceac5ca74ab38480aebdc37a5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8993235
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942691533729196633, guid: 3190f63ceac5ca74ab38480aebdc37a5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.026594039
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942691533729196633, guid: 3190f63ceac5ca74ab38480aebdc37a5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942691533729196633, guid: 3190f63ceac5ca74ab38480aebdc37a5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942691533729196633, guid: 3190f63ceac5ca74ab38480aebdc37a5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942691533729196633, guid: 3190f63ceac5ca74ab38480aebdc37a5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942691533729196633, guid: 3190f63ceac5ca74ab38480aebdc37a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942691533729196633, guid: 3190f63ceac5ca74ab38480aebdc37a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942691533729196633, guid: 3190f63ceac5ca74ab38480aebdc37a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3190f63ceac5ca74ab38480aebdc37a5, type: 3}
 --- !u!1 &2052196738
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,13 +714,14 @@ GameObject:
   - component: {fileID: 2052196739}
   - component: {fileID: 2052196741}
   - component: {fileID: 2052196740}
+  - component: {fileID: 2052196742}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Dialogue 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2052196739
 RectTransform:
   m_ObjectHideFlags: 0
@@ -695,16 +730,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052196738}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3.0590458}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 191172127}
+  m_Father: {fileID: 813473964}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50.537468, y: -80.669495}
-  m_SizeDelta: {x: 1774.667, y: 214.4929}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0.000030518, y: 180}
+  m_SizeDelta: {x: 1280, y: 214.493}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2052196740
 MonoBehaviour:
@@ -754,8 +789,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -804,62 +839,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052196738}
   m_CullTransparentMesh: 1
---- !u!1 &2057145226
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2057145227}
-  - component: {fileID: 2057145228}
-  m_Layer: 0
-  m_Name: Dialogue 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &2057145227
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2057145226}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -50.537476, y: -290.3305, z: -3.0590458}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 315203378}
-  m_Father: {fileID: 813473964}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2057145228
+--- !u!114 &2052196742
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2057145226}
+  m_GameObject: {fileID: 2052196738}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f52744686f3d854cb49f15b4079c518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 315203379}
+  textComponent: {fileID: 2052196740}
   dialogue:
-  - Setiap langkah di sini... terasa bermakna.
-  - Aku belajar, tumbuh, bertemu orang-orang yang mengubah hidupku.
-  - Tapi rasanya... selalu ada yang kurang.
-  - "Andai kamu ada di sini\u2026"
+  - Lihatlah!
+  - Orang-orang terlihat begitu bahagia, menikmati kemeriahan di setiap sudut.
+  - Aku... tidak pernah membayangkan ada di tempat seperti ini, merasa sebahagia
+    ini.
+  - Tapi anehnya, aku tidak ingat. Kenapa aku ada di sini?
+  - Di tempat yang dulu hanya ada dalam mimpiku.
   typeSpeed: 0.025
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1873941200}
   - {fileID: 929573889}
   - {fileID: 813473964}
   - {fileID: 776002629}
