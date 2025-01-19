@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuHandler : MonoBehaviour
 {
-    public void OnClickNewGame()
+    public void OnClick(string targetScene)
     {
-        LoadingSceneManager.LoadScene("CutScene 1");
+        LoadingSceneManager.LoadScene(targetScene);
     }
 
     public void OnClickExit()
