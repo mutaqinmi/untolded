@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 4649051130429054}
   - component: {fileID: 114235008137252218}
   - component: {fileID: 95630093885327862}
+  - component: {fileID: 8611386558686123660}
   m_Layer: 0
   m_Name: Scene Bottom
   m_TagString: Untagged
@@ -286,6 +287,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!225 &8611386558686123660
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625449697194184}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &3020739358812570475
 GameObject:
   m_ObjectHideFlags: 0
