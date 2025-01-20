@@ -214,7 +214,7 @@ MonoBehaviour:
   AutoMobileDetection: 1
   ForcedMode: 0
   HideMobileControlsInEditor: 0
-  MovementControl: 0
+  MovementControl: 1
   DelayedButtonPresses: 0
   SmoothMovement: 1
   Threshold: {x: 0.1, y: 0.4}

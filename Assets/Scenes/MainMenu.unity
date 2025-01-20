@@ -215,7 +215,7 @@ MonoBehaviour:
   IdleAnimationParameterName: Idle
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
-  MouseMode: 0
+  MouseMode: 1
 --- !u!225 &62796249
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -502,7 +502,7 @@ MonoBehaviour:
   IdleAnimationParameterName: Idle
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
-  MouseMode: 0
+  MouseMode: 1
 --- !u!225 &509164297
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1393,7 +1393,7 @@ MonoBehaviour:
   IdleAnimationParameterName: Idle
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
-  MouseMode: 0
+  MouseMode: 1
 --- !u!225 &1870945264
 CanvasGroup:
   m_ObjectHideFlags: 0
