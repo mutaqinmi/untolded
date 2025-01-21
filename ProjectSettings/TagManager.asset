@@ -8,6 +8,7 @@ TagManager:
   - Music
   - Background
   - NoMask
+  - HUD
   layers:
   - Default
   - TransparentFX
