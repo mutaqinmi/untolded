@@ -7,8 +7,7 @@ namespace QuestPointer
 {
     public class QuestPointer : MonoBehaviour
     {
-        [Header("UI Elements")]
-        [SerializeField] RectTransform questSign;
+        private RectTransform questSign;
 
         [Header("Quest")]
         public Quest[] Quests;
@@ -17,6 +16,12 @@ namespace QuestPointer
 
         private void Start()
         {
+            Transform uiCamera = GameObject.Find("UI Camera").transform;
+            Transform hudCanvas = uiCamera.Find("HUD Canvas");
+            Transform questPointer = hudCanvas.Find("QuestPointer");
+
+            questSign = questPointer.GetComponent<RectTransform>();
+            
             questIndex = 0;
         }
 

@@ -2743,14 +2743,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16ab0cd4027a45946be16a4c53552e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questSign: {fileID: 1845860944}
   Quests:
   - questTitle: Berangkat Sekolah
     questDescription: Pergi menuju motor untuk berangkat sekolah.
-    questTarget: {fileID: 1386298836}
-    isCompleted: 0
-  - questTitle: Mancing
-    questDescription: Pergi memancing
     questTarget: {fileID: 1386298836}
     isCompleted: 0
   questIndex: 0
@@ -3018,7 +3013,6 @@ GameObject:
   - component: {fileID: 1752082316}
   - component: {fileID: 1752082315}
   - component: {fileID: 1752082317}
-  - component: {fileID: 1752082318}
   m_Layer: 13
   m_Name: Interactable
   m_TagString: Untagged
@@ -3177,19 +3171,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddebcf83f0bc1d845a827065dad7a161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1752082318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752082313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f2f4544edad20940845c6db89208a3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactButton: {fileID: 1845860943}
 --- !u!1 &1820412338
 GameObject:
   m_ObjectHideFlags: 0
@@ -3518,18 +3499,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 2
   m_TargetDisplay: 0
---- !u!1 &1845860943 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7052592751978593553, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 3790502947096816846}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1845860944 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3638637084536737444, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 3790502947096816846}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2052768699
 GameObject:
   m_ObjectHideFlags: 0
