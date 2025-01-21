@@ -39,7 +39,7 @@ namespace QuestPointer
 
             if (targetScreenPoint.z > 0)
             {
-                float borderSize = 50f;
+                float borderSize = 20f;
 
                 Vector2 cappedScreenPosition = new Vector2(
                     Mathf.Clamp(targetScreenPoint.x, borderSize, Screen.width - borderSize),
