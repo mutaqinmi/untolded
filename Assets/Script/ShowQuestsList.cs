@@ -4,24 +4,28 @@ using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class ShowQuestsList : MonoBehaviour
 {
     private Transform questManager;
+    private List<QuestManager.Quest> quests;
+
     void Start()
     {
         Transform manager = GameObject.Find("Manager").transform;
         questManager = manager.Find("QuestManager");
+        quests = questManager.GetComponent<QuestManager.QuestManager>().quests;
+        quests.Reverse();
     }
 
     void Update()
     {
-        QuestPointer.Quest[] quests = questManager.GetComponent<QuestPointer.QuestPointer>().Quests;
         string formattedText = "";
 
-        for (int i = 0; i < quests.Length; i++)
+        for (int i = 0; i < quests.Count; i++)
         {
-            formattedText += $"•<indent=40>{quests[i].questDescription}</indent>\n";
+            formattedText += $"{(quests[i].isCompleted ? "<s>" : "")}•<indent=40>{quests[i].questDescription}</indent>{(quests[i].isCompleted ? "</s>" : "")}\n";
         }
 
         gameObject.GetComponent<TextMeshProUGUI>().text = formattedText;

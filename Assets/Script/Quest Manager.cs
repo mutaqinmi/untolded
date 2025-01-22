@@ -2,19 +2,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using MoreMountains.Tools;
 
-namespace QuestPointer
+namespace QuestManager
 {
-    public class QuestPointer : MonoBehaviour
+    public class QuestManager : MonoBehaviour
     {
-        [Header("Quest")]
-        public Quest[] Quests;
+        public List<Quest> quests; // ini penting untuk list quest yang tersedia
 
-        public int questIndex;
-
-        private void Start()
-        {    
-            questIndex = 0;
+        private void Awake()
+        {
+            quests = (List<Quest>)MMSaveLoadManager.Load(typeof(Quest), "untolded_saved_filedata", "SaveData");
         }
 
         // commented due pointer issues
@@ -54,7 +52,12 @@ namespace QuestPointer
     {
         public string questTitle;
         public string questDescription;
-        public Transform questTarget;
-        public bool isCompleted;
+        public bool isCompleted = false;
+
+        public Quest(string questTitle, string questDescription)
+        {
+            this.questTitle = questTitle;
+            this.questDescription = questDescription;
+        }
     }
 }

@@ -2,27 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using QuestPointer;
+using QuestManager;
 
 public class ShowQuest : MonoBehaviour
 {
     public bool isDescription;
-    private Transform questManager;
+    private List<QuestManager.Quest> quests;
+
     void Start()
     {
         Transform manager = GameObject.Find("Manager").transform;
-        questManager = manager.Find("QuestManager");
+        Transform questManager = manager.Find("QuestManager");
+
+        quests = questManager.gameObject.GetComponent<QuestManager.QuestManager>().quests;
+        quests.Reverse();
     }
 
     void Update()
     {
-        QuestPointer.Quest[] quests = questManager.GetComponent<QuestPointer.QuestPointer>().Quests;
-        int activeQuestIndex = questManager.GetComponent<QuestPointer.QuestPointer>().questIndex;
+        int activeQuestIndex = 0; // dapatkan quest terbaru
 
         if (isDescription)
         {
             gameObject.GetComponent<TextMeshProUGUI>().text = quests[activeQuestIndex].questDescription;
-        } 
+        }
         else
         {
             gameObject.GetComponent<TextMeshProUGUI>().text = quests[activeQuestIndex].questTitle;
