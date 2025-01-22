@@ -595,6 +595,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueCanvas: {fileID: 773523426}
+  onActive:
+    m_PersistentCalls:
+      m_Calls: []
+  onInActive:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 339694917}
+        m_TargetAssemblyTypeName: InitializeNewQuest, Assembly-CSharp
+        m_MethodName: NewQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &311927881
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +766,52 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9941633, y: 1.1838803}
   m_EdgeRadius: 0
+--- !u!1 &339694916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 339694918}
+  - component: {fileID: 339694917}
+  m_Layer: 0
+  m_Name: Quest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &339694917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339694916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639adde3a4db84f439b00cdcce1ece1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questTitle: Berangkat Sekolah
+  questDescription: Nyalakan motor dan pergi menuju sekolah
+--- !u!4 &339694918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339694916}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1670023693}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &356802934
 GameObject:
   m_ObjectHideFlags: 0
@@ -2779,7 +2843,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 339694918}
   m_Father: {fileID: 1297067812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1670023694
@@ -3664,6 +3729,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3226290389453305088, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.size

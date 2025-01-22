@@ -15,36 +15,37 @@ namespace QuestManager
             quests = (List<Quest>)MMSaveLoadManager.Load(typeof(Quest), "untolded_saved_filedata", "SaveData");
         }
 
-        // commented due pointer issues
-        //private void Update()
-        //{
-        //    if(!Quests[questIndex].isCompleted)
-        //    {
-        //        SetQuestSign(Quests[questIndex].questTarget);
-        //    }
-        //}
+        public void Update()
+        {
+            Transform uiCamera = GameObject.Find("UI Camera").transform;
+            Transform hudCanvas = uiCamera.Find("HUD Canvas");
+            Transform hud = hudCanvas.Find("HUD");
+            Transform questShow = hudCanvas.Find("Quest");
 
-        //private void SetQuestSign(Transform target)
-        //{
-        //    Vector3 targetScreenPoint = Camera.main.WorldToScreenPoint(target.position);
+            if (quests == null || quests.Count == 0)
+            {
+                questShow.gameObject.SetActive(false);
+            }
+            else
+            {
+                questShow.gameObject.SetActive(true);
+            }
+        }
 
-        //    if (targetScreenPoint.z > 0)
-        //    {
-        //        float borderSize = 20f;
+        public void NewQuest(string questTitle, string questDescription)
+        {
+            quests.Add(new Quest(questTitle, questDescription));
 
-        //        Vector2 cappedScreenPosition = new Vector2(
-        //            Mathf.Clamp(targetScreenPoint.x, borderSize, Screen.width - borderSize),
-        //            Mathf.Clamp(targetScreenPoint.y, borderSize, Screen.height - borderSize)
-        //        );
+            MMSaveLoadManager.Save(quests, "untolded_saved_filedata", "SaveData");
+        }
 
-        //        questSign.position = cappedScreenPosition;
-        //        questSign.gameObject.SetActive(true);
-        //    }
-        //    else
-        //    {
-        //        questSign.gameObject.SetActive(false);
-        //    }
-        //}
+        public void MarkQuestAsDone()
+        {
+            quests.Reverse();
+            quests[0].isCompleted = true;
+
+            MMSaveLoadManager.Save(quests, "untolded_saved_filedata", "SaveData");
+        }
     }
 
     [System.Serializable]

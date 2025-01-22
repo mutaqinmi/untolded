@@ -25,10 +25,7 @@ public class MainMenuHandler : MonoBehaviour
 
     public void InitializeNewGame()
     {
-        List<Quest> quests = new()
-        {
-            new("Berangkat Sekolah", "Pergi ke sekolah"),
-        };
+        List<Quest> quests = new();
 
         MMSaveLoadManager.Save(quests, "untolded_saved_filedata", "SaveData");
     }
