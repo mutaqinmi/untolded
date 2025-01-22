@@ -15,15 +15,14 @@ public class ShowQuestsList : MonoBehaviour
     {
         Transform manager = GameObject.Find("Manager").transform;
         questManager = manager.Find("QuestManager");
-        quests = questManager.GetComponent<QuestManager.QuestManager>().quests;
-        quests.Reverse();
+        quests = questManager.gameObject.GetComponent<QuestManager.QuestManager>().quests;
     }
 
     void Update()
     {
         string formattedText = "";
 
-        for (int i = 0; i < quests.Count; i++)
+        for (int i = quests.Count - 1; i >= 0; i--)
         {
             formattedText += $"{(quests[i].isCompleted ? "<s>" : "")}•<indent=40>{quests[i].questDescription}</indent>{(quests[i].isCompleted ? "</s>" : "")}\n";
         }

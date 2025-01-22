@@ -233,12 +233,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232139330}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44.46, y: 2.2, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 46.720337, y: -1.5996649, z: 0.0073994324}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 367601989}
+  m_Father: {fileID: 859757135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &232139332
 MonoBehaviour:
@@ -366,39 +366,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3190f63ceac5ca74ab38480aebdc37a5, type: 3}
---- !u!1 &367601988
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 367601989}
-  m_Layer: 0
-  m_Name: Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &367601989
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 367601988}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4194405, y: -2.8993235, z: -0.026594039}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 232139331}
-  - {fileID: 622486974}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &414873019
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,56 +606,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!1 &622486973
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 622486974}
-  - component: {fileID: 622486975}
-  m_Layer: 0
-  m_Name: QuestManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &622486974
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622486973}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 367601989}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &622486975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622486973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16ab0cd4027a45946be16a4c53552e9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Quests:
-  - questTitle: Masuk Sekolah
-    questDescription: Pergi menuju gerbang sekolah
-    questTarget: {fileID: 1404059163}
-    isCompleted: 0
-  questIndex: 0
 --- !u!1 &859757134
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,6 +635,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 232139331}
   - {fileID: 414873020}
   - {fileID: 29322980}
   - {fileID: 1836036284}
@@ -833,7 +751,8 @@ PrefabInstance:
       value: UI Camera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1796432495524587510, guid: 1d8e88098ae175a45ad38b53f233b8e6, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d8e88098ae175a45ad38b53f233b8e6, type: 3}
@@ -982,6 +901,134 @@ MonoBehaviour:
   LevelName: Scene 3
   PointOfEntryIndex: 0
   FacingDirection: 1
+--- !u!1001 &1555294642
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 868381514691469383, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: questTitle
+      value: Upacara Bendera
+      objectReference: {fileID: 0}
+    - target: {fileID: 868381514691469383, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: questDescription
+      value: Pergi menuju lapangan untuk upacara
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4194405
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8993235
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.026594039
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5829493531040950950, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_Name
+      value: Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 2745246295232977040, guid: e66b55fbd1707f24c8064a0dc28d97f4, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5050023918164847745, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1555294645}
+  m_SourcePrefab: {fileID: 100100000, guid: e66b55fbd1707f24c8064a0dc28d97f4, type: 3}
+--- !u!114 &1555294643 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 868381514691469383, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1555294642}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639adde3a4db84f439b00cdcce1ece1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1555294644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5050023918164847745, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1555294642}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1555294645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555294644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe2f7cc9f5c5e141bb8dee656a6ae47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1555294643}
+        m_TargetAssemblyTypeName: InitializeNewQuest, Assembly-CSharp
+        m_MethodName: NewQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1697494300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,5 +1258,5 @@ SceneRoots:
   - {fileID: 268157986}
   - {fileID: 1697494301}
   - {fileID: 947672143}
-  - {fileID: 367601989}
+  - {fileID: 1555294642}
   - {fileID: 859757135}

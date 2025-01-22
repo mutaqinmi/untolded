@@ -15,6 +15,7 @@ public class MainMenuHandler : MonoBehaviour
 
     public void SkipIntro()
     {
+        InitializeNewGame();
         LoadingSceneManager.LoadScene("Scene 1");
     }
 

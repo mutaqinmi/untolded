@@ -15,14 +15,13 @@ public class ShowQuest : MonoBehaviour
         Transform questManager = manager.Find("QuestManager");
 
         quests = questManager.gameObject.GetComponent<QuestManager.QuestManager>().quests;
-        quests.Reverse();
     }
 
     void Update()
     {
         if(quests != null || quests.Count > 0 && gameObject.activeInHierarchy)
         {
-            int activeQuestIndex = 0; // dapatkan quest terbaru
+            int activeQuestIndex = quests.Count - 1;
 
             if (isDescription)
             {
