@@ -20,7 +20,7 @@ namespace QuestManager
             Transform uiCamera = GameObject.Find("UI Camera").transform;
             Transform hudCanvas = uiCamera.Find("HUD Canvas");
             Transform hud = hudCanvas.Find("HUD");
-            Transform questShow = hudCanvas.Find("Quest");
+            Transform questShow = hud.Find("Quest");
 
             if (quests == null || quests.Count == 0)
             {

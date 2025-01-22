@@ -20,15 +20,18 @@ public class ShowQuest : MonoBehaviour
 
     void Update()
     {
-        int activeQuestIndex = 0; // dapatkan quest terbaru
+        if(quests != null || quests.Count > 0 && gameObject.activeInHierarchy)
+        {
+            int activeQuestIndex = 0; // dapatkan quest terbaru
 
-        if (isDescription)
-        {
-            gameObject.GetComponent<TextMeshProUGUI>().text = quests[activeQuestIndex].questDescription;
-        }
-        else
-        {
-            gameObject.GetComponent<TextMeshProUGUI>().text = quests[activeQuestIndex].questTitle;
+            if (isDescription)
+            {
+                gameObject.GetComponent<TextMeshProUGUI>().text = quests[activeQuestIndex].questDescription;
+            }
+            else
+            {
+                gameObject.GetComponent<TextMeshProUGUI>().text = quests[activeQuestIndex].questTitle;
+            }
         }
     }
 }

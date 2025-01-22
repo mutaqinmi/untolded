@@ -271,12 +271,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f52744686f3d854cb49f15b4079c518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 315203379}
+  dialogueLabel: {fileID: 0}
+  dialogueText: {fileID: 315203379}
   dialogue:
-  - Setiap langkah di sini... terasa bermakna.
-  - Aku belajar, tumbuh, bertemu orang-orang yang mengubah hidupku.
-  - Tapi rasanya... selalu ada yang kurang.
-  - "Andai kamu ada di sini\u2026"
+  - name: 
+    text: Setiap langkah di sini... terasa bermakna.
+  - name: 
+    text: Aku belajar, tumbuh, bertemu orang-orang yang mengubah hidupku.
+  - name: 
+    text: Tapi rasanya... selalu ada yang kurang.
+  - name: 
+    text: "Andai kamu ada di sini\u2026"
   typeSpeed: 0.025
 --- !u!1 &651791539
 GameObject:
@@ -310,6 +315,8 @@ MonoBehaviour:
   dialogueBox:
   - {fileID: 2052196738}
   - {fileID: 315203377}
+  dialogueScene: 0
+  dialogueCanvas: {fileID: 0}
   scene: Chapter 1 Opening
 --- !u!4 &651791541
 Transform:
@@ -851,14 +858,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f52744686f3d854cb49f15b4079c518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 2052196740}
+  dialogueLabel: {fileID: 0}
+  dialogueText: {fileID: 2052196740}
   dialogue:
-  - Lihatlah!
-  - Orang-orang terlihat begitu bahagia, menikmati kemeriahan di setiap sudut.
-  - Aku... tidak pernah membayangkan ada di tempat seperti ini, merasa sebahagia
-    ini.
-  - Tapi anehnya, aku tidak ingat. Kenapa aku ada di sini?
-  - Di tempat yang dulu hanya ada dalam mimpiku.
+  - name: 
+    text: Lihatlah!
+  - name: 
+    text: Orang-orang terlihat begitu bahagia, menikmati kemeriahan di setiap sudut.
+  - name: 
+    text: Aku... tidak pernah membayangkan ada di tempat seperti ini, merasa sebahagia
+      ini.
+  - name: 
+    text: Tapi anehnya, aku tidak ingat. Kenapa aku ada di sini?
+  - name: 
+    text: Di tempat yang dulu hanya ada dalam mimpiku.
   typeSpeed: 0.025
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

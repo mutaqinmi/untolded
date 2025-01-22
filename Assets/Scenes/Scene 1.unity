@@ -293,6 +293,7 @@ GameObject:
   - component: {fileID: 131194849}
   - component: {fileID: 131194848}
   - component: {fileID: 131194847}
+  - component: {fileID: 131194850}
   m_Layer: 5
   m_Name: Yes
   m_TagString: Untagged
@@ -388,6 +389,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 131194850}
+        m_TargetAssemblyTypeName: MarkQuestAsDone, Assembly-CSharp
+        m_MethodName: MarkAsDone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &131194848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,6 +439,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131194845}
   m_CullTransparentMesh: 1
+--- !u!114 &131194850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131194845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b42afe6381b84d4f84c899fdb7e5ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &250807464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3729,61 +3754,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3226290389453305088, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[0]
-      value: 'Arga: Bu, Arga mau berangkat sekarang'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[1]
-      value: 'Ibu: Iya, hati hati. Bekal nya udah dimasukkin ke tas belum?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[2]
-      value: 'Arga: Udah!'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[3]
-      value: 'Ibu: Yaudah, hati-hati di jalan. Jangan kebut-kebutan!'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[4]
-      value: 'Arga: Iya, iya ...'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[5]
-      value: 'Arga: Arga duluan ya!'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[6]
-      value: 'Ibu: Iya, hati-hati!'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[7]
-      value: 'Arga: Assalamualaikum!'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[8]
-      value: 'Ibu: Waalaikumussalam ...'
-      objectReference: {fileID: 0}
     - target: {fileID: 4150055705926953597, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: m_Name

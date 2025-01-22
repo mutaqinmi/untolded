@@ -4,64 +4,90 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 
-public class Dialogue : MonoBehaviour
+namespace Dialogue
 {
-    public TextMeshProUGUI textComponent;
-    public string[] dialogue;
-    public float typeSpeed;
-
-    private int index;
-
-    void Start()
+    public class Dialogue : MonoBehaviour
     {
-        textComponent.text = string.Empty;
-        StartDialogue();
-    }
+        public TextMeshProUGUI dialogueLabel;
+        public TextMeshProUGUI dialogueText;
+        public DialogueText[] dialogue;
+        public float typeSpeed = 0.025f;
 
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
+        private int index;
+
+        void Start()
         {
-            if (textComponent.text == dialogue[index])
+            dialogueText.text = string.Empty;
+            if(dialogueLabel != null)
             {
-                NextLine();
+                dialogueLabel.text = string.Empty;
+            }
+            StartDialogue();
+        }
+
+        void Update()
+        {
+            if(dialogueLabel != null)
+            {
+                dialogueLabel.text = dialogue[index].name;
+            }
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (dialogueText.text == dialogue[index].text)
+                {
+                    NextLine();
+                }
+                else
+                {
+                    StopAllCoroutines();
+                    dialogueText.text = dialogue[index].text;
+                }
+            }
+        }
+
+        void StartDialogue()
+        {
+            index = 0;
+            StartCoroutine(TypeLine());
+        }
+
+        IEnumerator TypeLine()
+        {
+            foreach (char c in dialogue[index].text.ToCharArray())
+            {
+                dialogueText.text += c;
+                yield return new WaitForSeconds(typeSpeed);
+            }
+        }
+
+        void NextLine()
+        {
+            if (index < dialogue.Length - 1)
+            {
+                index++;
+                dialogueText.text = string.Empty;
+                StartCoroutine(TypeLine());
             }
             else
             {
-                StopAllCoroutines();
-                textComponent.text = dialogue[index];
+                index = 0;
+                dialogueText.text = string.Empty;
+                gameObject.SetActive(false);
             }
         }
     }
 
-    void StartDialogue()
+    [System.Serializable]
+    public class DialogueText
     {
-        index = 0;
-        StartCoroutine(TypeLine());
-    }
+        public string name;
+        public string text;
 
-    IEnumerator TypeLine()
-    {
-        foreach(char c in dialogue[index].ToCharArray())
+        public DialogueText(string name, string text)
         {
-            textComponent.text += c;
-            yield return new WaitForSeconds(typeSpeed);
-        }
-    }
-
-    void NextLine()
-    {
-        if(index < dialogue.Length - 1)
-        {
-            index++;
-            textComponent.text = string.Empty;
-            StartCoroutine(TypeLine());
-        }
-        else
-        {
-            index = 0;
-            textComponent.text = string.Empty;
-            gameObject.SetActive(false);
+            this.name = name;
+            this.text = text;
         }
     }
 }

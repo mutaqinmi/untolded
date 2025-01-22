@@ -272,6 +272,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox:
   - {fileID: 1132929478}
+  dialogueScene: 0
+  dialogueCanvas: {fileID: 0}
   scene: Scene 1
 --- !u!1 &621016258
 GameObject:
@@ -564,8 +566,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -626,9 +628,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f52744686f3d854cb49f15b4079c518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 1132929480}
+  dialogueLabel: {fileID: 0}
+  dialogueText: {fileID: 1132929480}
   dialogue:
-  - 'Chapter 1: Jurnalistik'
+  - name: 
+    text: 'Chapter 1: Jurnalistik'
   typeSpeed: 0.025
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

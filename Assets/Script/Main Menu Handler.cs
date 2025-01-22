@@ -25,6 +25,8 @@ public class MainMenuHandler : MonoBehaviour
 
     public void InitializeNewGame()
     {
+        MMSaveLoadManager.DeleteSave("untolded_saved_filedata", "SaveData");
+
         List<Quest> quests = new();
 
         MMSaveLoadManager.Save(quests, "untolded_saved_filedata", "SaveData");

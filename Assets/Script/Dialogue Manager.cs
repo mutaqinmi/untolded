@@ -10,6 +10,8 @@ public class DialogueManager : MonoBehaviour
     public UnityEvent onActive;
     public UnityEvent onInActive;
 
+    private bool isActive = false;
+
     private void Start()
     {
         Transform uiCamera = GameObject.Find("UI Camera").transform;
@@ -22,13 +24,15 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (dialogueCanvas.activeInHierarchy)
+        if (dialogueCanvas.activeInHierarchy && !isActive)
         {
             onActive.Invoke();
+            isActive = true;
         }
-        else
+        else if (!dialogueCanvas.activeInHierarchy && isActive)
         {
             onInActive.Invoke();
+            isActive = false;
         }
     }
 }
