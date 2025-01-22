@@ -21,7 +21,7 @@ public class ShowQuestsList : MonoBehaviour
 
         for (int i = 0; i < quests.Length; i++)
         {
-            formattedText += $"{i + 1}.<indent=40>{quests[i].questDescription}</indent>\n";
+            formattedText += $"•<indent=40>{quests[i].questDescription}</indent>\n";
         }
 
         gameObject.GetComponent<TextMeshProUGUI>().text = formattedText;

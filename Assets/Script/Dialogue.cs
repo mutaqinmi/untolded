@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 
-public class DialogueScene : MonoBehaviour
+public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public string[] dialogue;
