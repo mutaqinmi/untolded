@@ -1,4 +1,5 @@
 using MoreMountains.CorgiEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,11 @@ using UnityEngine.Events;
 
 public class DialogueManager : MonoBehaviour
 {
-    [SerializeField] GameObject dialogueCanvas;
+    [Header("Dialogue Canvas")]
+    public GameObject dialogueCanvas;
+    public bool shouldTrigger;
+
+    [Header("Event Listener")]
     public UnityEvent onActive;
     public UnityEvent onInActive;
 
@@ -19,7 +24,7 @@ public class DialogueManager : MonoBehaviour
         HideHUD isHUDHidden = hudCanvas.gameObject.GetComponent<HideHUD>();
 
         isHUDHidden.isHUDHidden = true;
-        dialogueCanvas.SetActive(true);
+        dialogueCanvas.SetActive(!shouldTrigger);
     }
 
     private void Update()
@@ -33,6 +38,14 @@ public class DialogueManager : MonoBehaviour
         {
             onInActive.Invoke();
             isActive = false;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && shouldTrigger)
+        {
+            dialogueCanvas.SetActive(true);
         }
     }
 }

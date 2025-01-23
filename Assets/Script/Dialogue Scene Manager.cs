@@ -11,7 +11,6 @@ public class DialogueSceneManager : MonoBehaviour
     public GameObject[] dialogueBox;
 
     [Header("Dialogue in-scene")]
-    public bool dialogueScene;
     public GameObject dialogueCanvas;
 
     [Header("Jump to next scene")]
@@ -30,7 +29,7 @@ public class DialogueSceneManager : MonoBehaviour
 
     void Update()
     {
-        if (dialogueScene)
+        if (scene == string.Empty)
         {
             EndDialogue();
         }
@@ -61,7 +60,7 @@ public class DialogueSceneManager : MonoBehaviour
             }
             else
             {
-                if (dialogueScene)
+                if (scene == string.Empty)
                 {
                     Transform uiCamera = GameObject.Find("UI Camera").transform;
                     Transform hudCanvas = uiCamera.Find("HUD Canvas").transform;

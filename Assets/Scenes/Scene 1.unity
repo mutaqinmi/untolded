@@ -3751,6 +3751,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8759960633218184050, guid: e66b55fbd1707f24c8064a0dc28d97f4,
         type: 3}
+      propertyPath: shouldTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759960633218184050, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 773523426}
