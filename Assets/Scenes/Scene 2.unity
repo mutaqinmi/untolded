@@ -298,6 +298,146 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.27185, y: 4.6197343}
   m_EdgeRadius: 0
+--- !u!1001 &235959467
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 868381514691469383, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: questTitle
+      value: Upacara Bendera
+      objectReference: {fileID: 0}
+    - target: {fileID: 868381514691469383, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: questDescription
+      value: Pergi menuju lapangan untuk upacara
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4194405
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8993235
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.026594039
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5373783522152681296, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 947672144}
+    - target: {fileID: 5373783522152681296, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: dialogueBox.Array.data[0]
+      value: 
+      objectReference: {fileID: 947672145}
+    - target: {fileID: 5829493531040950950, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_Name
+      value: Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759960633218184050, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 947672144}
+    - target: {fileID: 8759960633218184050, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: onInActive.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759960633218184050, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: onInActive.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759960633218184050, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: onInActive.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 235959468}
+    - target: {fileID: 8759960633218184050, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: onInActive.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759960633218184050, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: onInActive.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759960633218184050, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: onInActive.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InitializeNewQuest, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759960633218184050, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: onInActive.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e66b55fbd1707f24c8064a0dc28d97f4, type: 3}
+--- !u!114 &235959468 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 868381514691469383, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 235959467}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639adde3a4db84f439b00cdcce1ece1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &268157986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -695,67 +835,48 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1780116560201744321, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -29.1
+      propertyPath: dialogue.Array.size
+      value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1780116560201744321, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.7
+      propertyPath: dialogue.Array.data[0].name
+      value: Arga
       objectReference: {fileID: 0}
-    - target: {fileID: 1780116560201744321, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.024190977
+      propertyPath: dialogue.Array.data[0].text
+      value: Ahh, tumben banget pagi pagi udah macet aja
       objectReference: {fileID: 0}
-    - target: {fileID: 1780116560201744321, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
+      propertyPath: dialogue.Array.data[1].name
+      value: Arga
       objectReference: {fileID: 0}
-    - target: {fileID: 1780116560201744321, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1780116560201744321, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1780116560201744321, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1780116560201744321, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1780116560201744321, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1780116560201744321, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4518104499192990970, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: m_Name
-      value: UI Camera
+      propertyPath: dialogue.Array.data[1].text
+      value: Sebaiknya, aku harus segera masuk. Mungkin upacaranya akan segera dimulai
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 1796432495524587510, guid: 1d8e88098ae175a45ad38b53f233b8e6, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d8e88098ae175a45ad38b53f233b8e6, type: 3}
+--- !u!1 &947672144 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1796432495524587510, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 947672143}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &947672145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5019272747611444044, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 947672143}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1404059162
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,134 +1022,6 @@ MonoBehaviour:
   LevelName: Scene 3
   PointOfEntryIndex: 0
   FacingDirection: 1
---- !u!1001 &1555294642
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 868381514691469383, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-        type: 3}
-      propertyPath: questTitle
-      value: Upacara Bendera
-      objectReference: {fileID: 0}
-    - target: {fileID: 868381514691469383, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-        type: 3}
-      propertyPath: questDescription
-      value: Pergi menuju lapangan untuk upacara
-      objectReference: {fileID: 0}
-    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.4194405
-      objectReference: {fileID: 0}
-    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.8993235
-      objectReference: {fileID: 0}
-    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.026594039
-      objectReference: {fileID: 0}
-    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5829493531040950950, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-        type: 3}
-      propertyPath: m_Name
-      value: Manager
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 2745246295232977040, guid: e66b55fbd1707f24c8064a0dc28d97f4, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5050023918164847745, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1555294645}
-  m_SourcePrefab: {fileID: 100100000, guid: e66b55fbd1707f24c8064a0dc28d97f4, type: 3}
---- !u!114 &1555294643 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 868381514691469383, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1555294642}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 639adde3a4db84f439b00cdcce1ece1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1555294644 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5050023918164847745, guid: e66b55fbd1707f24c8064a0dc28d97f4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1555294642}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1555294645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1555294644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fe2f7cc9f5c5e141bb8dee656a6ae47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onStart:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1555294643}
-        m_TargetAssemblyTypeName: InitializeNewQuest, Assembly-CSharp
-        m_MethodName: NewQuest
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1697494300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,5 +1251,5 @@ SceneRoots:
   - {fileID: 268157986}
   - {fileID: 1697494301}
   - {fileID: 947672143}
-  - {fileID: 1555294642}
   - {fileID: 859757135}
+  - {fileID: 235959467}

@@ -17,19 +17,19 @@ namespace QuestManager
 
         public void Update()
         {
-            Transform uiCamera = GameObject.Find("UI Camera").transform;
-            Transform hudCanvas = uiCamera.Find("HUD Canvas");
-            Transform hud = hudCanvas.Find("HUD");
-            Transform questShow = hud.Find("Quest");
+            //Transform uiCamera = GameObject.Find("UI Camera").transform;
+            //Transform hudCanvas = uiCamera.Find("HUD Canvas");
+            //Transform hud = hudCanvas.Find("HUD");
+            //Transform questShow = hud.Find("Quest");
 
-            if (quests == null || quests.Count == 0)
-            {
-                questShow.gameObject.SetActive(false);
-            }
-            else
-            {
-                questShow.gameObject.SetActive(true);
-            }
+            //if (quests == null || quests.Count == 0)
+            //{
+            //    questShow.gameObject.SetActive(false);
+            //}
+            //else
+            //{
+            //    questShow.gameObject.SetActive(true);
+            //}
         }
 
         public void NewQuest(string questTitle, string questDescription)

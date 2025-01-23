@@ -16,32 +16,42 @@ public class DialogueManager : MonoBehaviour
     public UnityEvent onInActive;
 
     private bool isActive = false;
+    private HideHUD isHUDHidden;
+    private Transform uiCamera;
 
     private void Start()
     {
+        uiCamera = GameObject.Find("UI Camera").transform;
+        Transform hudCanvas = uiCamera.Find("HUD Canvas").transform;
+        isHUDHidden = hudCanvas.gameObject.GetComponent<HideHUD>();
+
         dialogueCanvas.SetActive(!shouldTrigger);
     }
 
     private void Update()
     {
-        if (dialogueCanvas.activeInHierarchy)
-        {
-            Transform uiCamera = GameObject.Find("UI Camera").transform;
-            Transform hudCanvas = uiCamera.Find("HUD Canvas").transform;
-            HideHUD isHUDHidden = hudCanvas.gameObject.GetComponent<HideHUD>();
-
-            isHUDHidden.isHUDHidden = true;
-        }
-
         if (dialogueCanvas.activeInHierarchy && !isActive)
         {
             onActive.Invoke();
             isActive = true;
+            if (isActive) isHUDHidden.isHUDHidden = true;
+
+            Character character = FindAnyObjectByType<Character>();
+            LevelManager.Instance.FreezeCharacters();
+            character.MovementState.ChangeState(CharacterStates.MovementStates.Idle);
+
         }
         else if (!dialogueCanvas.activeInHierarchy && isActive)
         {
             onInActive.Invoke();
             isActive = false;
+            if(!isActive)
+            {
+                isHUDHidden.isHUDHidden = false;
+                uiCamera.gameObject.GetComponent<InputManager>().SetHorizontalMovement(0f);
+            }
+
+            LevelManager.Instance.UnFreezeCharacters();
         }
     }
 

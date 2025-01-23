@@ -2906,6 +2906,7 @@ GameObject:
   - component: {fileID: 1752082316}
   - component: {fileID: 1752082315}
   - component: {fileID: 1752082317}
+  - component: {fileID: 1752082318}
   m_Layer: 13
   m_Name: Interactable
   m_TagString: Untagged
@@ -3064,6 +3065,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddebcf83f0bc1d845a827065dad7a161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1752082318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752082313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c7ef48864c8384ba2e2703600ab308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideableObject: {fileID: 1845219975}
+  dialogueManager: {fileID: 6398873940655749848}
 --- !u!1 &1820412338
 GameObject:
   m_ObjectHideFlags: 0
@@ -3302,7 +3317,6 @@ GameObject:
   - component: {fileID: 1845219979}
   - component: {fileID: 1845219978}
   - component: {fileID: 1845219977}
-  - component: {fileID: 1845219980}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Prompt
@@ -3393,18 +3407,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 2
   m_TargetDisplay: 0
---- !u!114 &1845219980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1845219975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78c7ef48864c8384ba2e2703600ab308, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2052768699
 GameObject:
   m_ObjectHideFlags: 0
@@ -3764,6 +3766,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e66b55fbd1707f24c8064a0dc28d97f4, type: 3}
+--- !u!1 &6398873940655749848 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2745246295232977040, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 6398873940655749847}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

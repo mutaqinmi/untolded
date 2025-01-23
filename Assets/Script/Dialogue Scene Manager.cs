@@ -100,11 +100,6 @@ public class DialogueSceneManager : MonoBehaviour
             {
                 if (scene == string.Empty)
                 {
-                    Transform uiCamera = GameObject.Find("UI Camera").transform;
-                    Transform hudCanvas = uiCamera.Find("HUD Canvas").transform;
-                    HideHUD isHUDHidden = hudCanvas.gameObject.GetComponent<HideHUD>();
-
-                    isHUDHidden.isHUDHidden = false;
                     dialogueCanvas.SetActive(false);
                 }
                 else
