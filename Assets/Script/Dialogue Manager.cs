@@ -19,16 +19,20 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
-        Transform uiCamera = GameObject.Find("UI Camera").transform;
-        Transform hudCanvas = uiCamera.Find("HUD Canvas").transform;
-        HideHUD isHUDHidden = hudCanvas.gameObject.GetComponent<HideHUD>();
-
-        isHUDHidden.isHUDHidden = true;
         dialogueCanvas.SetActive(!shouldTrigger);
     }
 
     private void Update()
     {
+        if (dialogueCanvas.activeInHierarchy)
+        {
+            Transform uiCamera = GameObject.Find("UI Camera").transform;
+            Transform hudCanvas = uiCamera.Find("HUD Canvas").transform;
+            HideHUD isHUDHidden = hudCanvas.gameObject.GetComponent<HideHUD>();
+
+            isHUDHidden.isHUDHidden = true;
+        }
+
         if (dialogueCanvas.activeInHierarchy && !isActive)
         {
             onActive.Invoke();
@@ -45,7 +49,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (collision.CompareTag("Player") && shouldTrigger)
         {
-            dialogueCanvas.SetActive(true);
+            dialogueCanvas.SetActive(shouldTrigger);
         }
     }
 }

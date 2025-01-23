@@ -17,30 +17,68 @@ public class DialogueSceneManager : MonoBehaviour
     public string scene;
 
     private int index;
-
     private float timer;
 
     void Start()
     {
         index = 0;
 
-        dialogueBox[index].SetActive(true);
+        if(dialogueCanvas != null)
+        {
+            if (dialogueCanvas.activeInHierarchy)
+            {
+                dialogueBox[index].SetActive(true);
+            }
+        }
+        else
+        {
+            if (scene != string.Empty)
+            {
+                dialogueBox[index].SetActive(true);
+            }
+        }
     }
 
     void Update()
     {
-        if (scene == string.Empty)
+        if(dialogueCanvas != null)
         {
-            EndDialogue();
+            if (dialogueCanvas.activeInHierarchy)
+            {
+                if (scene == string.Empty)
+                {
+                    EndDialogue();
+                }
+                else
+                {
+                    timer += Time.deltaTime;
+                    if (timer >= 5)
+                    {
+                        EndDialogue();
+
+                        timer = 0;
+                    }
+                }
+            }
         }
         else
         {
-            timer += Time.deltaTime;
-            if (timer >= 5)
+            if (scene != string.Empty)
             {
-                EndDialogue();
+                if (scene == string.Empty)
+                {
+                    EndDialogue();
+                }
+                else
+                {
+                    timer += Time.deltaTime;
+                    if (timer >= 5)
+                    {
+                        EndDialogue();
 
-                timer = 0;
+                        timer = 0;
+                    }
+                }
             }
         }
     }
