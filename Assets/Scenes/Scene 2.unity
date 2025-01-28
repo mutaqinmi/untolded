@@ -783,50 +783,6 @@ Transform:
   - {fileID: 589990378}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &925864891
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 925864892}
-  - component: {fileID: 925864893}
-  m_Layer: 0
-  m_Name: SceneChangeManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &925864892
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925864891}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1404059163}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &925864893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925864891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb9025f293df7c54eb2f4933a7ff9629, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &947672143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -848,7 +804,7 @@ PrefabInstance:
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[0].text
-      value: Ahh, tumben banget pagi pagi udah macet aja
+      value: Ahh, tumben banget pagi-pagi udah macet aja.
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
@@ -858,7 +814,7 @@ PrefabInstance:
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[1].text
-      value: Sebaiknya, aku harus segera masuk. Mungkin upacaranya akan segera dimulai
+      value: Sebaiknya, aku harus segera masuk. Mungkin upacaranya akan segera dimulai.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -887,6 +843,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1404059163}
   - component: {fileID: 1404059165}
+  - component: {fileID: 1404059167}
   - component: {fileID: 1404059166}
   m_Layer: 0
   m_Name: EntryPoint
@@ -907,8 +864,7 @@ Transform:
   m_LocalPosition: {x: -37.03966, y: -0.8896648, z: 0.0073994324}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 925864892}
+  m_Children: []
   m_Father: {fileID: 859757135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1404059165
@@ -965,7 +921,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1404059162}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af899fbe95055ab49a90ef907eef6f12, type: 3}
+  m_Script: {fileID: 11500000, guid: 6432d8d1924b43748819ec079d9d2eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonActivatedRequirement: 2
@@ -988,8 +944,8 @@ MonoBehaviour:
   ButtonPromptPrefab: {fileID: 114235008137252218, guid: 3e5f37537b7cf1347b19e93ddebc04ec,
     type: 3}
   ButtonPromptText: 
-  ButtonPromptColor: {r: 0, g: 0, b: 0, a: 0}
-  ButtonPromptTextColor: {r: 0, g: 0, b: 0, a: 0}
+  ButtonPromptColor: {r: 0.4862745, g: 0.9882353, b: 0, a: 0}
+  ButtonPromptTextColor: {r: 1, g: 1, b: 1, a: 0}
   AlwaysShowPrompt: 0
   ShowPromptWhenColliding: 1
   HidePromptAfterUse: 1
@@ -1001,7 +957,7 @@ MonoBehaviour:
   OnActivation:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 925864893}
+      - m_Target: {fileID: 1404059167}
         m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
         m_MethodName: OnActivate
         m_Mode: 5
@@ -1019,9 +975,34 @@ MonoBehaviour:
   OnStay:
     m_PersistentCalls:
       m_Calls: []
-  LevelName: Scene 3
-  PointOfEntryIndex: 0
-  FacingDirection: 1
+  TextBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  ArrowVisible: 1
+  TextFont: {fileID: 0}
+  TextSize: 20
+  Alignment: 4
+  FadeDuration: 0.2
+  TransitionTime: 0.2
+  DistanceFromTop: 0
+  BoxesFollowZone: 0
+  CanMoveWhileTalking: 0
+  ButtonHandled: 1
+  MessageDuration: 3
+  ActivableMoreThanOnce: 1
+  InactiveTime: 2
+  Dialogue: []
+--- !u!114 &1404059167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404059162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb9025f293df7c54eb2f4933a7ff9629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1697494300
 GameObject:
   m_ObjectHideFlags: 0

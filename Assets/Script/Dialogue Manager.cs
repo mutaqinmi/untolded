@@ -37,8 +37,11 @@ public class DialogueManager : MonoBehaviour
             if (isActive) isHUDHidden.isHUDHidden = true;
 
             Character character = FindAnyObjectByType<Character>();
-            LevelManager.Instance.FreezeCharacters();
-            character.MovementState.ChangeState(CharacterStates.MovementStates.Idle);
+            if(character != null)
+            {
+                LevelManager.Instance.FreezeCharacters();
+                character.MovementState.ChangeState(CharacterStates.MovementStates.Idle);
+            }
 
         }
         else if (!dialogueCanvas.activeInHierarchy && isActive)

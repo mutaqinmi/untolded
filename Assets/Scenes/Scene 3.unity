@@ -123,151 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &252135176
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 252135177}
-  - component: {fileID: 252135179}
-  - component: {fileID: 252135178}
-  m_Layer: 0
-  m_Name: EntryPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &252135177
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 252135176}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -28.16, y: -2.83, z: 0.0073994324}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 545941872}
-  m_Father: {fileID: 1658152755}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &252135178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 252135176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af899fbe95055ab49a90ef907eef6f12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ButtonActivatedRequirement: 2
-  RequiresPlayerType: 1
-  RequiresButtonActivationAbility: 1
-  Activable: 1
-  AutoActivation: 0
-  CanOnlyActivateIfGrounded: 0
-  ShouldUpdateState: 1
-  OnlyOneActivationAtOnce: 1
-  UnlimitedActivations: 1
-  MaxNumberOfActivations: 0
-  DelayBetweenUses: 0
-  DisableAfterUse: 0
-  InputType: 0
-  InputButton: Interact
-  InputKey: 32
-  AnimationTriggerParameterName: 
-  UseVisualPrompt: 1
-  ButtonPromptPrefab: {fileID: 114235008137252218, guid: b9597a95b605ef04db4f626b1066f31e,
-    type: 3}
-  ButtonPromptText: 
-  ButtonPromptColor: {r: 0, g: 0, b: 0, a: 0}
-  ButtonPromptTextColor: {r: 0, g: 0, b: 0, a: 0}
-  AlwaysShowPrompt: 0
-  ShowPromptWhenColliding: 1
-  HidePromptAfterUse: 1
-  PromptRelativePosition: {x: 0, y: 0, z: 0}
-  ActivationFeedback: {fileID: 0}
-  DeniedFeedback: {fileID: 0}
-  EnterFeedback: {fileID: 0}
-  ExitFeedback: {fileID: 0}
-  OnActivation:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 545941873}
-        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
-        m_MethodName: OnActivate
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Scene 2
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStay:
-    m_PersistentCalls:
-      m_Calls: []
-  LevelName: Scene 2
-  PointOfEntryIndex: 0
-  FacingDirection: 1
---- !u!61 &252135179
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 252135176}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 1.4728355, y: 0.022765398}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 5.058323, y: 3.571504}
-  m_EdgeRadius: 0
 --- !u!1 &348359374
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,50 +381,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 524273246}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &545941871
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 545941872}
-  - component: {fileID: 545941873}
-  m_Layer: 0
-  m_Name: SceneChangeManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &545941872
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545941871}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 252135177}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &545941873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545941871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb9025f293df7c54eb2f4933a7ff9629, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &744038050
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,7 +434,7 @@ MonoBehaviour:
   CheckpointAttributionDirection: 0
   CurrentCheckPoint: {fileID: 0}
   PointsOfEntry:
-  - {fileID: 252135177}
+  - {fileID: 0}
   - {fileID: 1857288635}
   IntroFadeDuration: 1
   OutroFadeDuration: 1
@@ -872,50 +683,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!1 &962442871
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 962442872}
-  - component: {fileID: 962442873}
-  m_Layer: 0
-  m_Name: SceneChangeManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &962442872
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962442871}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1857288635}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &962442873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962442871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb9025f293df7c54eb2f4933a7ff9629, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1392508123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -984,6 +751,97 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3190f63ceac5ca74ab38480aebdc37a5, type: 3}
+--- !u!1 &1653637873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1653637874}
+  - component: {fileID: 1653637876}
+  - component: {fileID: 1653637875}
+  m_Layer: 0
+  m_Name: Checkpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1653637874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653637873}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -26.17, y: -4.04, z: 0.0073994324}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1658152755}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1653637875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653637873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923a01d66c4618446abb082250646478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FacingDirection: 1
+--- !u!61 &1653637876
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653637873}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.3035505, y: 1.8098676}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.27185, y: 4.6197343}
+  m_EdgeRadius: 0
 --- !u!1 &1658152754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,10 +871,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1653637874}
   - {fileID: 2084207882}
   - {fileID: 505047472}
   - {fileID: 348359375}
-  - {fileID: 252135177}
   - {fileID: 1857288635}
   - {fileID: 874900477}
   m_Father: {fileID: 0}
@@ -1042,7 +900,7 @@ PrefabInstance:
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.size
-      value: 23
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
@@ -1057,12 +915,12 @@ PrefabInstance:
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[1].name
-      value: Panitia 1
+      value: Arga
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[1].text
-      value: Kamu mau kemana?
+      value: '*menoleh* ...'
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
@@ -1072,57 +930,59 @@ PrefabInstance:
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[2].text
-      value: Ke lapang?
+      value: Jam segini masih disini?
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[3].name
-      value: Panitia 1
+      value: Arga
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[3].text
-      value: Name tag nya mana?
+      value: Maaf, Kak. tadi di jalan macet, banyak ...
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[4].name
-      value: Arga
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].text
-      value: Oh iya, Kak. untuk pengambilan name tag sebelah mana ya, Kak?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[5].name
       value: Panitia 2
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
-      propertyPath: dialogue.Array.data[5].text
-      value: Kamu gak liat kita lagi berdiri disini?
+      propertyPath: dialogue.Array.data[4].text
+      value: Sssstttt! tidak menerima alasan apapun.
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
-      propertyPath: dialogue.Array.data[6].name
+      propertyPath: dialogue.Array.data[5].name
       value: Arga
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
-      propertyPath: dialogue.Array.data[6].text
-      value: Maaf, Kak. saya kira kakak bidang keamanan
+      propertyPath: dialogue.Array.data[5].text
+      value: '*terdiam* ...'
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
-      propertyPath: dialogue.Array.data[7].name
+      propertyPath: dialogue.Array.data[6].name
       value: Panitia 1
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
+      propertyPath: dialogue.Array.data[6].text
+      value: Kamu tahu, apa konsekuensi siswa yang telat?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[7].name
+      value: Arga
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
       propertyPath: dialogue.Array.data[7].text
-      value: Iya juga, ngapain kita mangkal disini?
+      value: Siswa telat menerima konsekuensi berupa squat jump sebanyak jumlah menit
+        siswa tersebut terlambat. dihitung berdasarkan waktu yang telah ditetapkan
+        oleh panitia.
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
@@ -1132,27 +992,27 @@ PrefabInstance:
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[8].text
-      value: Ya tadi kan katanya suruh disini buat pegambilan name tag
+      value: Baguss! ayo lakukan!
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[9].name
-      value: Panitia 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[9].text
-      value: '*berpikir* ...'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[10].name
       value: Arga
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
+      propertyPath: dialogue.Array.data[9].text
+      value: '*melakukan squat jump*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[10].name
+      value: Panitia 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
       propertyPath: dialogue.Array.data[10].text
-      value: Jadi, kakak bagian registrasi ya?
+      value: Lain kali, jangan sampai terlambat ya.
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
@@ -1162,17 +1022,17 @@ PrefabInstance:
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[11].text
-      value: Bukan!
+      value: Nama kamu siapa?
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[12].name
-      value: Panitia 1
+      value: Arga
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[12].text
-      value: Lah, terus apa?
+      value: '*menghela nafas* ... Arga Mahendra'
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
@@ -1182,99 +1042,139 @@ PrefabInstance:
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[13].text
-      value: Lah, ya registrasi lah, Han!
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[14].name
-      value: Panitia 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[14].text
-      value: Yowis lah, nama kamu siapa?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[15].name
-      value: Arga
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[15].text
-      value: Arga Mahendra Aryaduta
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[16].name
-      value: Panitia 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[16].text
       value: Jurusan?
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
-      propertyPath: dialogue.Array.data[17].name
+      propertyPath: dialogue.Array.data[14].name
       value: Arga
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
-      propertyPath: dialogue.Array.data[17].text
+      propertyPath: dialogue.Array.data[14].text
       value: Pengembangan Perangkat Lunak dan Gim
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
-      propertyPath: dialogue.Array.data[18].name
+      propertyPath: dialogue.Array.data[15].name
       value: Panitia 2
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
-      propertyPath: dialogue.Array.data[18].text
-      value: Nih, name tag kamu. jangan sampai hilang, jangan sampai rusak, jangan
-        sampai ...
+      propertyPath: dialogue.Array.data[15].text
+      value: Wah, anak TI tuh, Han!.
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
-      propertyPath: dialogue.Array.data[19].name
+      propertyPath: dialogue.Array.data[16].name
       value: Panitia 1
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
+      propertyPath: dialogue.Array.data[16].text
+      value: Masa anak TI telat.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[17].name
+      value: Panitia 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[17].text
+      value: Hahaha, kalau kamu ketemu kang Arhan di gedung TI, siap-siap dipelototin
+        tuh seharian.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[18].name
+      value: Arga
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[18].text
+      value: '*menggaruk kepala*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[19].name
+      value: Kang Arhan
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
       propertyPath: dialogue.Array.data[19].text
-      value: Wes, wes, wes, udah udah. Kamu langsung ke lapang aja, sekarang udah
-        mau mulai upacara pembukaan
+      value: Udahlah Syifa, kamu udah ngomongin hal ini 5 kali ke anak baru loh.
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[20].name
-      value: Arga
+      value: Teh Syifa
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[20].text
-      value: '*Menatap kedua kakak kelas di depannya* ...'
+      value: Aura penunggu sekolah soalnya. Hahahaha
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[21].name
-      value: Arga
+      value: Teh Syifa
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[21].text
-      value: Baik, Kak. Terimakasih!
+      value: BTW, ini name tag kamu. jangan sampai hilang, jangan sampai robek, jangan
+        sampai rusak, jangan sampai ...
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[22].name
-      value: Panitia 1 & Panitia 2
+      value: Kang Arhan
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: dialogue.Array.data[22].text
-      value: Yo, sama-sama.
+      value: Dia pasti paham kok, Syif.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[23].name
+      value: Teh Syifa
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[23].text
+      value: Yaudah, kamu cepet baris ke lapangan, acaranya udah mau mulai.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[24].name
+      value: Arga
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[24].text
+      value: '*mengangguk* ...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[25].name
+      value: Arga
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[25].text
+      value: Baik, Kang / Teh. Terimakasih!.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[26].name
+      value: Teh Syifa
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[26].text
+      value: Sama-sama!
       objectReference: {fileID: 0}
     - target: {fileID: 4150055705926953597, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
@@ -1368,9 +1268,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1857288635}
   - component: {fileID: 1857288637}
-  - component: {fileID: 1857288636}
+  - component: {fileID: 1857288639}
+  - component: {fileID: 1857288638}
   m_Layer: 0
-  m_Name: EntryPoint2
+  m_Name: EntryPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1388,76 +1289,9 @@ Transform:
   m_LocalPosition: {x: 14.46, y: -2.83, z: 0.0073994324}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 962442872}
+  m_Children: []
   m_Father: {fileID: 1658152755}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1857288636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857288634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af899fbe95055ab49a90ef907eef6f12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ButtonActivatedRequirement: 2
-  RequiresPlayerType: 1
-  RequiresButtonActivationAbility: 1
-  Activable: 1
-  AutoActivation: 0
-  CanOnlyActivateIfGrounded: 0
-  ShouldUpdateState: 1
-  OnlyOneActivationAtOnce: 1
-  UnlimitedActivations: 1
-  MaxNumberOfActivations: 0
-  DelayBetweenUses: 0
-  DisableAfterUse: 0
-  InputType: 0
-  InputButton: Interact
-  InputKey: 32
-  AnimationTriggerParameterName: 
-  UseVisualPrompt: 1
-  ButtonPromptPrefab: {fileID: 114235008137252218, guid: 3e5f37537b7cf1347b19e93ddebc04ec,
-    type: 3}
-  ButtonPromptText: 
-  ButtonPromptColor: {r: 0, g: 0, b: 0, a: 0}
-  ButtonPromptTextColor: {r: 0, g: 0, b: 0, a: 0}
-  AlwaysShowPrompt: 0
-  ShowPromptWhenColliding: 1
-  HidePromptAfterUse: 1
-  PromptRelativePosition: {x: 0, y: 2.5, z: 0}
-  ActivationFeedback: {fileID: 0}
-  DeniedFeedback: {fileID: 0}
-  EnterFeedback: {fileID: 0}
-  ExitFeedback: {fileID: 0}
-  OnActivation:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 962442873}
-        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
-        m_MethodName: OnActivate
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Scene 4
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStay:
-    m_PersistentCalls:
-      m_Calls: []
-  LevelName: Scene 4
-  PointOfEntryIndex: 0
-  FacingDirection: 1
 --- !u!61 &1857288637
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1503,6 +1337,97 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.4859924, y: 3.571504}
   m_EdgeRadius: 0
+--- !u!114 &1857288638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857288634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb9025f293df7c54eb2f4933a7ff9629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1857288639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857288634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6432d8d1924b43748819ec079d9d2eed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonActivatedRequirement: 2
+  RequiresPlayerType: 1
+  RequiresButtonActivationAbility: 1
+  Activable: 1
+  AutoActivation: 0
+  CanOnlyActivateIfGrounded: 0
+  ShouldUpdateState: 1
+  OnlyOneActivationAtOnce: 1
+  UnlimitedActivations: 1
+  MaxNumberOfActivations: 0
+  DelayBetweenUses: 0
+  DisableAfterUse: 0
+  InputType: 0
+  InputButton: Interact
+  InputKey: 32
+  AnimationTriggerParameterName: 
+  UseVisualPrompt: 1
+  ButtonPromptPrefab: {fileID: 114235008137252218, guid: 3e5f37537b7cf1347b19e93ddebc04ec,
+    type: 3}
+  ButtonPromptText: 
+  ButtonPromptColor: {r: 0.4862745, g: 0.9882353, b: 0, a: 0}
+  ButtonPromptTextColor: {r: 1, g: 1, b: 1, a: 0}
+  AlwaysShowPrompt: 0
+  ShowPromptWhenColliding: 1
+  HidePromptAfterUse: 1
+  PromptRelativePosition: {x: 0, y: 2.5, z: 0}
+  ActivationFeedback: {fileID: 0}
+  DeniedFeedback: {fileID: 0}
+  EnterFeedback: {fileID: 0}
+  ExitFeedback: {fileID: 0}
+  OnActivation:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1857288638}
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: OnActivate
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: CutScene 2
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStay:
+    m_PersistentCalls:
+      m_Calls: []
+  TextBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  ArrowVisible: 1
+  TextFont: {fileID: 0}
+  TextSize: 20
+  Alignment: 4
+  FadeDuration: 0.2
+  TransitionTime: 0.2
+  DistanceFromTop: 0
+  BoxesFollowZone: 0
+  CanMoveWhileTalking: 0
+  ButtonHandled: 1
+  MessageDuration: 3
+  ActivableMoreThanOnce: 1
+  InactiveTime: 2
+  Dialogue: []
 --- !u!1 &1888167539
 GameObject:
   m_ObjectHideFlags: 0
