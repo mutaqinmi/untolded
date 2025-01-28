@@ -12,7 +12,7 @@ namespace QuestManager
 
         private void Awake()
         {
-            quests = (List<Quest>)MMSaveLoadManager.Load(typeof(Quest), "untolded_saved_filedata", "SaveData");
+            quests = (List<Quest>)MMSaveLoadManager.Load(typeof(Quest), "quests_save", "SaveData");
         }
 
         public void Update()
@@ -34,9 +34,17 @@ namespace QuestManager
 
         public void NewQuest(string questTitle, string questDescription)
         {
+            foreach (Quest quest in quests)
+            {
+                if(quest.questTitle == questTitle)
+                {
+                    return;
+                }
+            }
+
             quests.Add(new Quest(questTitle, questDescription));
 
-            MMSaveLoadManager.Save(quests, "untolded_saved_filedata", "SaveData");
+            MMSaveLoadManager.Save(quests, "quests_save", "SaveData");
         }
 
         public void MarkQuestAsDone()
@@ -44,7 +52,7 @@ namespace QuestManager
             quests.Reverse();
             quests[0].isCompleted = true;
 
-            MMSaveLoadManager.Save(quests, "untolded_saved_filedata", "SaveData");
+            MMSaveLoadManager.Save(quests, "quests_save", "SaveData");
         }
     }
 
