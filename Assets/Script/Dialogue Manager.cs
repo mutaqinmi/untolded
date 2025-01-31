@@ -58,6 +58,12 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    public void ButtonActivation()
+    {
+        shouldTrigger = true;
+        dialogueCanvas.SetActive(shouldTrigger);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && shouldTrigger)

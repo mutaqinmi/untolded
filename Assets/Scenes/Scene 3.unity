@@ -381,6 +381,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 524273246}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &617935764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 617935765}
+  - component: {fileID: 617935766}
+  m_Layer: 0
+  m_Name: Panitia 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &617935765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617935764}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5, y: -2.33, z: 0.03399347}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1836291642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &617935766
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617935764}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 14590954, guid: cebe542bfbada694794030a1a1778f7a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6.402942, y: 6.7999997}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &744038050
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,8 +518,7 @@ MonoBehaviour:
   CheckpointAttributionDirection: 0
   CurrentCheckPoint: {fileID: 0}
   PointsOfEntry:
-  - {fileID: 0}
-  - {fileID: 1857288635}
+  - {fileID: 1653637874}
   IntroFadeDuration: 1
   OutroFadeDuration: 1
   FaderID: 0
@@ -549,10 +632,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.14945209, y: 3.402586}
+  m_Offset: {x: -0.42792702, y: 1.59}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -563,7 +646,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0974019, y: 10.033611}
+  m_Size: {x: 1.426579, y: 3.3681161}
   m_EdgeRadius: 0
 --- !u!114 &784050156
 MonoBehaviour:
@@ -875,9 +958,75 @@ Transform:
   - {fileID: 2084207882}
   - {fileID: 505047472}
   - {fileID: 348359375}
-  - {fileID: 1857288635}
   - {fileID: 874900477}
+  - {fileID: 1836291642}
+  - {fileID: 1662476527}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1662476526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1662476527}
+  m_Layer: 0
+  m_Name: ExitPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1662476527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662476526}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1857288635}
+  m_Father: {fileID: 1658152755}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1836291641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1836291642}
+  m_Layer: 0
+  m_Name: Panitia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1836291642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836291641}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 617935765}
+  - {fileID: 2060662173}
+  m_Father: {fileID: 1658152755}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1851853160
 PrefabInstance:
@@ -887,295 +1036,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 982691473725139003, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1796432495524587510, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.size
-      value: 27
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].name
-      value: Panitia 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].text
-      value: Hey, tunggu!
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[1].name
-      value: Arga
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[1].text
-      value: '*menoleh* ...'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].name
-      value: Panitia 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].text
-      value: Jam segini masih disini?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].name
-      value: Arga
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].text
-      value: Maaf, Kak. tadi di jalan macet, banyak ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].name
-      value: Panitia 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].text
-      value: Sssstttt! tidak menerima alasan apapun.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[5].name
-      value: Arga
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[5].text
-      value: '*terdiam* ...'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[6].name
-      value: Panitia 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[6].text
-      value: Kamu tahu, apa konsekuensi siswa yang telat?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[7].name
-      value: Arga
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[7].text
-      value: Siswa telat menerima konsekuensi berupa squat jump sebanyak jumlah menit
-        siswa tersebut terlambat. dihitung berdasarkan waktu yang telah ditetapkan
-        oleh panitia.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[8].name
-      value: Panitia 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[8].text
-      value: Baguss! ayo lakukan!
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[9].name
-      value: Arga
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[9].text
-      value: '*melakukan squat jump*'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[10].name
-      value: Panitia 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[10].text
-      value: Lain kali, jangan sampai terlambat ya.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[11].name
-      value: Panitia 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[11].text
-      value: Nama kamu siapa?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[12].name
-      value: Arga
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[12].text
-      value: '*menghela nafas* ... Arga Mahendra'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[13].name
-      value: Panitia 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[13].text
-      value: Jurusan?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[14].name
-      value: Arga
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[14].text
-      value: Pengembangan Perangkat Lunak dan Gim
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[15].name
-      value: Panitia 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[15].text
-      value: Wah, anak TI tuh, Han!.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[16].name
-      value: Panitia 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[16].text
-      value: Masa anak TI telat.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[17].name
-      value: Panitia 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[17].text
-      value: Hahaha, kalau kamu ketemu kang Arhan di gedung TI, siap-siap dipelototin
-        tuh seharian.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[18].name
-      value: Arga
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[18].text
-      value: '*menggaruk kepala*'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[19].name
-      value: Kang Arhan
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[19].text
-      value: Udahlah Syifa, kamu udah ngomongin hal ini 5 kali ke anak baru loh.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[20].name
-      value: Teh Syifa
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[20].text
-      value: Aura penunggu sekolah soalnya. Hahahaha
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[21].name
-      value: Teh Syifa
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[21].text
-      value: BTW, ini name tag kamu. jangan sampai hilang, jangan sampai robek, jangan
-        sampai rusak, jangan sampai ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[22].name
-      value: Kang Arhan
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[22].text
-      value: Dia pasti paham kok, Syif.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[23].name
-      value: Teh Syifa
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[23].text
-      value: Yaudah, kamu cepet baris ke lapangan, acaranya udah mau mulai.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[24].name
-      value: Arga
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[24].text
-      value: '*mengangguk* ...'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[25].name
-      value: Arga
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[25].text
-      value: Baik, Kang / Teh. Terimakasih!.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[26].name
-      value: Teh Syifa
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: dialogue.Array.data[26].text
-      value: Sama-sama!
-      objectReference: {fileID: 0}
     - target: {fileID: 4150055705926953597, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: m_Name
@@ -1231,16 +1091,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6231294924719356474, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9084375707619953488, guid: 1d8e88098ae175a45ad38b53f233b8e6,
-        type: 3}
-      propertyPath: m_BlockingObjects
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1271,7 +1121,7 @@ GameObject:
   - component: {fileID: 1857288639}
   - component: {fileID: 1857288638}
   m_Layer: 0
-  m_Name: EntryPoint
+  m_Name: ToCutScene2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1290,7 +1140,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1658152755}
+  m_Father: {fileID: 1662476527}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1857288637
 BoxCollider2D:
@@ -1507,6 +1357,90 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 2
   m_Size: {x: 55.81, y: 12.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &2060662172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2060662173}
+  - component: {fileID: 2060662174}
+  m_Layer: 0
+  m_Name: Panitia 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2060662173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060662172}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.2, y: -2.33, z: 0.03399347}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1836291642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2060662174
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060662172}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 14590954, guid: cebe542bfbada694794030a1a1778f7a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6.402942, y: 6.7999997}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

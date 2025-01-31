@@ -324,7 +324,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3685671345496679465
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 50, y: 0, z: 50, w: 20}
+  m_margin: {x: 75, y: 0, z: 75, w: 20}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1897,7 +1897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8965006243986889897
@@ -2190,7 +2190,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.000038147, y: 233}
+  m_AnchoredPosition: {x: 0.000061035156, y: 233}
   m_SizeDelta: {x: -341.448, y: 230.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6396804541448129585
@@ -2246,24 +2246,36 @@ MonoBehaviour:
   dialogueLabel: {fileID: 5493372249117387119}
   dialogueText: {fileID: 5293763811812117346}
   dialogue:
+  - name: Panitia 1
+    text: Hey, tunggu!
   - name: Arga
-    text: Bu!, Arga mau berangkat dulu!
-  - name: Ibu
-    text: Iya!, bekalnya udah dimasukkin ke tas belum?
+    text: '*berhenti*'
+  - name: Panitia 2
+    text: Siswa baru kan? kok baru dateng?
   - name: Arga
-    text: Udah!
-  - name: Ibu
-    text: Kalo gitu, hati-hati di jalan, jangan ngebut!
+    text: Iya, Kak. Maaf sedikit telat, tadi -
+  - name: Panitia 1
+    text: Telat? upacara udah mau mulai, lho.
+  - name: Panitia 2
+    text: Kalau mau ikut MPLS, jangan cuma ikut-ikutan, harus kompak
+  - name: Panitia 2
+    text: Kamu tahu kan, kita bener-bener disiplin disini?
   - name: Arga
-    text: Iya, Bu. Siap!
+    text: '*mengangguk* Paham, Kak. Besok saya usahakan untuk disiplin'
+  - name: Panitia 1
+    text: Iya, harus lebih disiplin lagi. Semua orang udah pada baris di lapangan.
+      Jangan bikin acaranya kehambat gara-gara telat.
+  - name: Panitia 2
+    text: Ya udah, buat hari ini kamu langsung masuk aja.
+  - name: Panitia 2
+    text: Tapi inget, acara ini bukan cuma formalitas, tapi kesempatan buat kamu
+      belajar lebih disiplin
   - name: Arga
-    text: Arga pamit dulu ya, Bu!
-  - name: Ibu
-    text: Iya, hati-hati!
+    text: Baik, Kak.
+  - name: Panitia 1
+    text: Sip, enjoy MPLS nya ya, jangan sampe telat lagi, ya!
   - name: Arga
-    text: Iyaa, Assalamualaikum!
-  - name: Ibu
-    text: Waalaikumussalam ...
+    text: Baik, Kak. Terima kasih!
   typeSpeed: 0.025
 --- !u!1 &5449220714558390704
 GameObject:

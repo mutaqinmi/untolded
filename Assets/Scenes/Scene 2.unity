@@ -779,8 +779,8 @@ Transform:
   - {fileID: 414873020}
   - {fileID: 29322980}
   - {fileID: 1836036284}
-  - {fileID: 1404059163}
   - {fileID: 589990378}
+  - {fileID: 1308246554}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &947672143
@@ -833,6 +833,38 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 947672143}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1308246553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1308246554}
+  m_Layer: 0
+  m_Name: ExitPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1308246554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308246553}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1404059163}
+  m_Father: {fileID: 859757135}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1404059162
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,8 +877,9 @@ GameObject:
   - component: {fileID: 1404059165}
   - component: {fileID: 1404059167}
   - component: {fileID: 1404059166}
+  - component: {fileID: 1404059168}
   m_Layer: 0
-  m_Name: EntryPoint
+  m_Name: ToSchoolFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -865,7 +898,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 859757135}
+  m_Father: {fileID: 1308246554}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1404059165
 BoxCollider2D:
@@ -1003,6 +1036,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb9025f293df7c54eb2f4933a7ff9629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1404059168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404059162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af899fbe95055ab49a90ef907eef6f12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonActivatedRequirement: 2
+  RequiresPlayerType: 1
+  RequiresButtonActivationAbility: 1
+  Activable: 1
+  AutoActivation: 0
+  CanOnlyActivateIfGrounded: 0
+  ShouldUpdateState: 1
+  OnlyOneActivationAtOnce: 1
+  UnlimitedActivations: 1
+  MaxNumberOfActivations: 0
+  DelayBetweenUses: 0
+  DisableAfterUse: 0
+  InputType: 0
+  InputButton: Interact
+  InputKey: 32
+  AnimationTriggerParameterName: 
+  UseVisualPrompt: 1
+  ButtonPromptPrefab: {fileID: 114235008137252218, guid: 3e5f37537b7cf1347b19e93ddebc04ec,
+    type: 3}
+  ButtonPromptText: 
+  ButtonPromptColor: {r: 0.4862745, g: 0.9882353, b: 0, a: 0}
+  ButtonPromptTextColor: {r: 1, g: 1, b: 1, a: 0}
+  AlwaysShowPrompt: 0
+  ShowPromptWhenColliding: 1
+  HidePromptAfterUse: 1
+  PromptRelativePosition: {x: 0, y: 0, z: 0}
+  ActivationFeedback: {fileID: 0}
+  DeniedFeedback: {fileID: 0}
+  EnterFeedback: {fileID: 0}
+  ExitFeedback: {fileID: 0}
+  OnActivation:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStay:
+    m_PersistentCalls:
+      m_Calls: []
+  LevelName: Scene 3
+  PointOfEntryIndex: 0
+  FacingDirection: 1
 --- !u!1 &1697494300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,5 +1319,5 @@ SceneRoots:
   - {fileID: 268157986}
   - {fileID: 1697494301}
   - {fileID: 947672143}
-  - {fileID: 859757135}
   - {fileID: 235959467}
+  - {fileID: 859757135}
