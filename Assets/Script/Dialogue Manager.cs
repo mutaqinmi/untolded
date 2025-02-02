@@ -60,7 +60,6 @@ public class DialogueManager : MonoBehaviour
 
     public void ButtonActivation()
     {
-        shouldTrigger = true;
         dialogueCanvas.SetActive(shouldTrigger);
     }
 
@@ -69,6 +68,6 @@ public class DialogueManager : MonoBehaviour
         if (collision.CompareTag("Player") && shouldTrigger)
         {
             dialogueCanvas.SetActive(shouldTrigger);
-        }
+        } 
     }
 }

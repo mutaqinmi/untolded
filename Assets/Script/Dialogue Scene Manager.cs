@@ -23,7 +23,7 @@ public class DialogueSceneManager : MonoBehaviour
     {
         index = 0;
 
-        if(dialogueCanvas != null)
+        if (dialogueCanvas != null)
         {
             if (dialogueCanvas.activeInHierarchy)
             {

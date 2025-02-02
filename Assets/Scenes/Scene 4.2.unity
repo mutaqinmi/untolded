@@ -1583,6 +1583,11 @@ PrefabInstance:
       propertyPath: questDescription
       value: Eksplor sekolah dan ikut gabung ekstrakurikuler di lapangan.
       objectReference: {fileID: 0}
+    - target: {fileID: 2745246295232977040, guid: e66b55fbd1707f24c8064a0dc28d97f4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3509084615375375774, guid: e66b55fbd1707f24c8064a0dc28d97f4,
         type: 3}
       propertyPath: m_LocalPosition.x

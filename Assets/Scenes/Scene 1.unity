@@ -3550,6 +3550,121 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].name
+      value: Arga
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].text
+      value: Bu, Aku mau berangkat dulu.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[1].name
+      value: Ibu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[1].text
+      value: Iya, hati-hati di jalan!.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].name
+      value: Arga
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].text
+      value: Iya, siap. Bu.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].name
+      value: Ibu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].text
+      value: Bekal makanannya udah disimpen ke tas?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].name
+      value: Arga
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].text
+      value: Sudah, Bu. Semuanya aman.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[5].name
+      value: Ibu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[5].text
+      value: Baguslah kalau begitu, hati-hati di jalan. Jangan kebut-kebutan!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[6].name
+      value: Arga
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[6].text
+      value: Baik, Bu.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[7].name
+      value: Arga
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[7].text
+      value: Aku pamit dulu ya, Bu.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[8].name
+      value: Ibu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[8].text
+      value: Iya, hati-hati
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[9].name
+      value: Arga
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[9].text
+      value: Assalamualaikum
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[10].name
+      value: Ibu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[10].text
+      value: Waalaikumussalam
+      objectReference: {fileID: 0}
     - target: {fileID: 4150055705926953597, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
       propertyPath: m_Name

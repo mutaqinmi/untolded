@@ -1184,6 +1184,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
+      propertyPath: dialogue.Array.data[2].name
+      value: Arga
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
       propertyPath: dialogue.Array.data[2].text
       value: Apa ke kantin aja ya?
       objectReference: {fileID: 0}
@@ -1196,6 +1201,11 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[3].text
       value: '*menoleh ke belakang lapangan*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].name
+      value: Arga
       objectReference: {fileID: 0}
     - target: {fileID: 3293639827010172155, guid: 1d8e88098ae175a45ad38b53f233b8e6,
         type: 3}
