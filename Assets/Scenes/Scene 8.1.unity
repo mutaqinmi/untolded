@@ -2232,7 +2232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &856581277
 Transform:
   m_ObjectHideFlags: 0
@@ -3503,7 +3503,7 @@ MonoBehaviour:
   OnStay:
     m_PersistentCalls:
       m_Calls: []
-  LevelName: Scene 6
+  LevelName: Scene 11
   PointOfEntryIndex: 1
   FacingDirection: 1
 --- !u!1 &1395282825
@@ -3586,7 +3586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 923a01d66c4618446abb082250646478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FacingDirection: 0
+  FacingDirection: 1
 --- !u!61 &1438766683
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5098,7 +5098,7 @@ MonoBehaviour:
   OnStay:
     m_PersistentCalls:
       m_Calls: []
-  LevelName: Scene 5
+  LevelName: Scene 10
   PointOfEntryIndex: 1
   FacingDirection: 0
 --- !u!61 &2051343626

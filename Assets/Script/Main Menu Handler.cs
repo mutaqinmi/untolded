@@ -4,11 +4,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class MainMenuHandler : MonoBehaviour
 {
     public GameObject prompt;
+    public UnityEvent onStartNewGame;
 
     public void Awake()
     {
@@ -87,7 +89,7 @@ public class MainMenuHandler : MonoBehaviour
     public void StartNewGame()
     {
         InitializeNewGame();
-        LoadingSceneManager.LoadScene("CutScene 1");
+        onStartNewGame.Invoke();
     }
 
     public void CancelNewGame()

@@ -1050,7 +1050,7 @@ MonoBehaviour:
   CheckpointAttributionDirection: 0
   CurrentCheckPoint: {fileID: 0}
   PointsOfEntry:
-  - {fileID: 1404059163}
+  - {fileID: 232139331}
   IntroFadeDuration: 1
   OutroFadeDuration: 1
   FaderID: 0
